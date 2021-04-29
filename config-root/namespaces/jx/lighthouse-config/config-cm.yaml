@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - 2017ht01561/jx-cluster
-      target_url: http://dashboard-jx.
+      target_url: http://dashboard-jx.35.193.120.113.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null

@@ -7,10 +7,9 @@ metadata:
     chart: "lighthouse-1.0.31"
     app: lighthouse-foghorn
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  annotations:
-    meta.helm.sh/release-name: 'lighthouse'
-    wave.pusher.com/update-on-config-change: 'true'
   namespace: jx
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
 spec:
   replicas: 1
   selector:
@@ -21,7 +20,7 @@ spec:
       labels:
         app: lighthouse-foghorn
       annotations:
-        jenkins-x.io/hash: 'fa2b34f3397a3c9a40206087b0bdbfc9d7cec6f6163b8c5dd58ca524f6db1779'
+        jenkins-x.io/hash: '001bc80f33f80adaef1fd168c2804d79789956124c87f87afbc4bcb29b4a486d'
     spec:
       serviceAccountName: lighthouse-foghorn
       containers:

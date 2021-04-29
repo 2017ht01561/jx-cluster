@@ -1,7 +1,7 @@
 # Source: jxboot-helmfile-resources/templates/ingress-config-configmap.yaml
 apiVersion: v1
 data:
-  domain: "change.me"
+  domain: "35.193.120.113.nip.io"
   email: ""
   exposer: "Ingress"
   issuer: ""
@@ -9,8 +9,6 @@ data:
 kind: ConfigMap
 metadata:
   name: ingress-config
-  annotations:
-    meta.helm.sh/release-name: 'jxboot-helmfile-resources'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

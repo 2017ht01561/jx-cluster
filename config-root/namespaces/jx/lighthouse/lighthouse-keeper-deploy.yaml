@@ -7,10 +7,9 @@ metadata:
     chart: "lighthouse-1.0.31"
     app: lighthouse-keeper
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  annotations:
-    meta.helm.sh/release-name: 'lighthouse'
-    wave.pusher.com/update-on-config-change: 'true'
   namespace: jx
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
 spec:
   replicas: 1
   strategy:
@@ -27,7 +26,7 @@ spec:
         ad.datadoghq.com/keeper.logs: '[{"source":"lighthouse","service":"keeper"}]'
         prometheus.io/port: "9090"
         prometheus.io/scrape: "true"
-        jenkins-x.io/hash: 'fa2b34f3397a3c9a40206087b0bdbfc9d7cec6f6163b8c5dd58ca524f6db1779'
+        jenkins-x.io/hash: '001bc80f33f80adaef1fd168c2804d79789956124c87f87afbc4bcb29b4a486d'
       labels:
         app: lighthouse-keeper
     spec:
