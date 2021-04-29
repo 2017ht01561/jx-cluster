@@ -24,5 +24,4 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     iam.gke.io/gcp-service-account: tf-jx-bold-heron-tekton@artful-zone-312202.iam.gserviceaccount.com
-    meta.helm.sh/release-name: 'tekton-pipeline'
 secrets:

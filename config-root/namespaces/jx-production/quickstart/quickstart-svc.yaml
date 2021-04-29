@@ -1,13 +1,12 @@
-# Source: lighthouse/templates/webhooks-service.yaml
+# Source: quickstart/templates/service.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: hook
+  name: quickstart
   labels:
-    chart: "lighthouse-1.0.31"
+    chart: "quickstart-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  annotations: {}
-  namespace: jx
+  namespace: jx-production
 spec:
   type: ClusterIP
   ports:
@@ -16,4 +15,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app: lighthouse-webhooks
+    app: quickstart-quickstart

@@ -9,10 +9,9 @@ metadata:
     heritage: "Helm"
     release: "chartmuseum"
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  annotations:
-    meta.helm.sh/release-name: 'chartmuseum'
-    wave.pusher.com/update-on-config-change: 'true'
   namespace: jx
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
 spec:
   selector:
     matchLabels:

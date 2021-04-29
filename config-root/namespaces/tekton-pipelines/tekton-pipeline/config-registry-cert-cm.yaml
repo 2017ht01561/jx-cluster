@@ -22,8 +22,6 @@ metadata:
     app.kubernetes.io/instance: default
     app.kubernetes.io/part-of: tekton-pipelines
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  annotations:
-    meta.helm.sh/release-name: 'tekton-pipeline'
 # data:
 #  # Registry's self-signed certificate
 #  cert: |
