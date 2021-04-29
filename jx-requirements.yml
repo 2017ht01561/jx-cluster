@@ -5,27 +5,46 @@ spec:
     enabled: false
     schedule: ""
   cluster:
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    clusterName: tf-jx-bold-heron
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
     gitKind: github
     gitName: github
     gitServer: https://github.com
+    gke:
+      projectNumber: "397646310202"
+    project: artful-zone-312202
     provider: gke
     registry: gcr.io
+    zone: us-central1-a
   environments:
   - key: dev
+    owner: 2017ht01561
+    repository: jx-cluster
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: 35.193.120.113.nip.io
     externalDNS: false
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
-      production: false
+      production: true
+  kuberhealthy: true
+  pipelineUser:
+    username: dhanya
   repository: nexus
   secretStorage: gsm
+  storage:
+  - name: logs
+    url: gs://logs-tf-jx-bold-heron-c338b3f2f894
+  - name: reports
+    url: gs://reports-tf-jx-bold-heron-c338b3f2f894
+  - name: repository
+    url: gs://repository-tf-jx-bold-heron-c338b3f2f894
   vault: {}
   webhook: lighthouse
