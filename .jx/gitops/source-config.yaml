@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: node
     - name: nodechat1
     - name: quickstart
     scheduler: in-repo
