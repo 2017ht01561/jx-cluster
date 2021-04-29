@@ -6,8 +6,7 @@ metadata:
   labels:
     chart: "lighthouse-1.0.31"
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  annotations:
-    meta.helm.sh/release-name: 'lighthouse'
+  annotations: {}
   namespace: jx
 spec:
   type: ClusterIP

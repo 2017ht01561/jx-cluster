@@ -5,12 +5,11 @@ metadata:
   name: quickstart-quickstart
   labels:
     draft: draft-app
-    chart: "quickstart-0.0.1"
+    chart: "quickstart-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  annotations:
-    meta.helm.sh/release-name: 'quickstart'
-    wave.pusher.com/update-on-config-change: 'true'
   namespace: jx-staging
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
 spec:
   selector:
     matchLabels:
@@ -25,11 +24,11 @@ spec:
       serviceAccountName: quickstart-quickstart
       containers:
         - name: quickstart
-          image: "gcr.io/artful-zone-312202/quickstart:0.0.1"
+          image: "gcr.io/artful-zone-312202/quickstart:0.0.2"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.1
+              value: 0.0.2
           envFrom: null
           ports:
             - name: http

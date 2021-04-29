@@ -16,8 +16,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: tekton-pipelines-webhook
   namespace: tekton-pipelines
-  annotations:
-    meta.helm.sh/release-name: 'tekton-pipeline'
 spec:
   ports:
     # Define metrics and profiling for them to be accessible within service meshes.
