@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         2017ht01561/jx-cluster: true
+        2017ht01561/node: true
         2017ht01561/nodechat1: true
         2017ht01561/quickstart: true
     plank: {}
@@ -22,6 +23,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         2017ht01561/jx-cluster: merge
+        2017ht01561/node: merge
         2017ht01561/nodechat1: merge
         2017ht01561/quickstart: merge
       queries:
@@ -35,6 +37,7 @@ data:
         - needs-rebase
         repos:
         - 2017ht01561/jx-cluster
+        - 2017ht01561/node
         - 2017ht01561/nodechat1
         - 2017ht01561/quickstart
       - labels:
@@ -47,6 +50,7 @@ data:
         - needs-rebase
         repos:
         - 2017ht01561/jx-cluster
+        - 2017ht01561/node
         - 2017ht01561/nodechat1
         - 2017ht01561/quickstart
       target_url: http://dashboard-jx.35.193.120.113.nip.io
