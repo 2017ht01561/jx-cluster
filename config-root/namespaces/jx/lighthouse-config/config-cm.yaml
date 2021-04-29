@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         2017ht01561/jx-cluster: true
+        2017ht01561/quickstart: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         2017ht01561/jx-cluster: merge
+        2017ht01561/quickstart: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - 2017ht01561/jx-cluster
+        - 2017ht01561/quickstart
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - 2017ht01561/jx-cluster
+        - 2017ht01561/quickstart
       target_url: http://dashboard-jx.35.193.120.113.nip.io
 kind: ConfigMap
 metadata:
