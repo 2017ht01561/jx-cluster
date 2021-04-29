@@ -1,0 +1,8 @@
+# Source: quickstart/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: quickstart-quickstart
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
