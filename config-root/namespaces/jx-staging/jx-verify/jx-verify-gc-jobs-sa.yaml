@@ -3,6 +3,8 @@ kind: ServiceAccount
 apiVersion: v1
 metadata:
   name: jx-verify-gc-jobs
+  annotations:
+    meta.helm.sh/release-name: 'jx-verify'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
