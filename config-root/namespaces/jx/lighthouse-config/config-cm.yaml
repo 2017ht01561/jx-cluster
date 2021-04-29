@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         2017ht01561/jx-cluster: true
+        2017ht01561/liberty: true
         2017ht01561/node: true
         2017ht01561/nodechat1: true
         2017ht01561/quickstart: true
@@ -23,6 +24,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         2017ht01561/jx-cluster: merge
+        2017ht01561/liberty: merge
         2017ht01561/node: merge
         2017ht01561/nodechat1: merge
         2017ht01561/quickstart: merge
@@ -37,6 +39,7 @@ data:
         - needs-rebase
         repos:
         - 2017ht01561/jx-cluster
+        - 2017ht01561/liberty
         - 2017ht01561/node
         - 2017ht01561/nodechat1
         - 2017ht01561/quickstart
@@ -50,6 +53,7 @@ data:
         - needs-rebase
         repos:
         - 2017ht01561/jx-cluster
+        - 2017ht01561/liberty
         - 2017ht01561/node
         - 2017ht01561/nodechat1
         - 2017ht01561/quickstart
