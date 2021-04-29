@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - 2017ht01561/liberty
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - 2017ht01561/node
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -31,6 +35,9 @@ data:
       2017ht01561/jx-cluster:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
+      2017ht01561/liberty:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
       2017ht01561/node:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -47,6 +54,22 @@ data:
     plugins:
       2017ht01561/jx-cluster:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      2017ht01561/liberty:
       - approve
       - assign
       - blunderbuss
@@ -121,6 +144,9 @@ data:
     triggers:
     - repos:
       - 2017ht01561/jx-cluster
+      trusted_org: todo
+    - repos:
+      - 2017ht01561/liberty
       trusted_org: todo
     - repos:
       - 2017ht01561/node
