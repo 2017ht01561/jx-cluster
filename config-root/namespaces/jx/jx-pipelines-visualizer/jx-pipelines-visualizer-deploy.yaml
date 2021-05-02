@@ -10,10 +10,9 @@ metadata:
     app.kubernetes.io/version: "latest"
     app.kubernetes.io/managed-by: "Helm"
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  annotations:
-    meta.helm.sh/release-name: 'jx-pipelines-visualizer'
-    wave.pusher.com/update-on-config-change: 'true'
   namespace: jx
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
 spec:
   replicas: 1
   revisionHistoryLimit: 2

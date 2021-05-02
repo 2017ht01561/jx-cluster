@@ -1,34 +1,34 @@
-# Source: quickstart/templates/deployment.yaml
+# Source: node-http-watch-pipeline-activity/templates/deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quickstart-quickstart
+  name: node-http-watch-pipeline-activity-node-http-watch-pipeline-acti
   labels:
     draft: draft-app
-    chart: "quickstart-0.0.3"
+    chart: "node-http-watch-pipeline-activity-0.0.1"
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  namespace: jx-staging
+  namespace: jx-production
   annotations:
     wave.pusher.com/update-on-config-change: 'true'
 spec:
   selector:
     matchLabels:
-      app: quickstart-quickstart
+      app: node-http-watch-pipeline-activity-node-http-watch-pipeline-acti
   replicas: 1
   template:
     metadata:
       labels:
         draft: draft-app
-        app: quickstart-quickstart
+        app: node-http-watch-pipeline-activity-node-http-watch-pipeline-acti
     spec:
-      serviceAccountName: quickstart-quickstart
+      serviceAccountName: node-http-watch-pipeline-activity-node-http-watch-pipeline-acti
       containers:
-        - name: quickstart
-          image: "gcr.io/artful-zone-312202/quickstart:0.0.3"
+        - name: node-http-watch-pipeline-activity
+          image: "gcr.io/artful-zone-312202/node-http-watch-pipeline-activity:0.0.1"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.3
+              value: 0.0.1
           envFrom: null
           ports:
             - name: http
