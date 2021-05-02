@@ -20,5 +20,9 @@ releases:
   namespace: jx-staging
   values:
   - jx-values.yaml
+- chart: dev/node-http-watch-pipeline-activity
+  version: 0.0.1
+  name: node-http-watch-pipeline-activity
+  namespace: jx-staging
 templates: {}
 renderedvalues: {}
