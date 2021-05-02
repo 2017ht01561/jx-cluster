@@ -6,7 +6,6 @@ metadata:
   namespace: jx
   annotations:
     docs.jenkins-x.io: https://jenkins-x.io/v3/admin/troubleshooting/bot-token/
-    meta.helm.sh/release-name: 'health-checks-jx'
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
