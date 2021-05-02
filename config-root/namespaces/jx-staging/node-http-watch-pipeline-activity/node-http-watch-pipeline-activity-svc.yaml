@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: node-http-watch-pipeline-activity
   labels:
-    chart: "node-http-watch-pipeline-activity-0.0.1"
+    chart: "node-http-watch-pipeline-activity-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
 spec:

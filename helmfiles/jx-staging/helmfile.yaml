@@ -21,7 +21,7 @@ releases:
   values:
   - jx-values.yaml
 - chart: dev/node-http-watch-pipeline-activity
-  version: 0.0.1
+  version: 0.0.2
   name: node-http-watch-pipeline-activity
   namespace: jx-staging
   values:
