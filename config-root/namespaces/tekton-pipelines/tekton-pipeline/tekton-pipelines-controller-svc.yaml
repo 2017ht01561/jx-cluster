@@ -16,8 +16,6 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   name: tekton-pipelines-controller
   namespace: tekton-pipelines
-  annotations:
-    meta.helm.sh/release-name: 'tekton-pipeline'
 spec:
   ports:
     - name: http-metrics

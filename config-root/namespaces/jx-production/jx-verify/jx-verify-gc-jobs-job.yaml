@@ -5,7 +5,6 @@ metadata:
   name: jx-verify-gc-jobs
   annotations:
     kapp.k14s.io/disable-wait: ""
-    meta.helm.sh/release-name: 'jx-verify'
   labels:
     app: jx-verify-gc-jobs
     release: jx-verify
