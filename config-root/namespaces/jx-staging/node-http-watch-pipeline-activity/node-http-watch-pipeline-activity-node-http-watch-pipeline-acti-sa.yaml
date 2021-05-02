@@ -3,6 +3,8 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: node-http-watch-pipeline-activity-node-http-watch-pipeline-acti
+  annotations:
+    meta.helm.sh/release-name: 'node-http-watch-pipeline-activity'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

@@ -10,6 +10,7 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     checksum/config: 2aaba8b328701ca61618c707324b9170d84611bd15795c73c2dfbf6f5608d1b5
+    meta.helm.sh/release-name: 'lighthouse'
     wave.pusher.com/update-on-config-change: 'true'
   namespace: jx
 spec:
@@ -24,7 +25,7 @@ spec:
       annotations:
         prometheus.io/port: "2112"
         prometheus.io/scrape: "true"
-        jenkins-x.io/hash: '2ef71443357ea88cbcc940d403852ef51c22cf5a49cc95ef71f942d3931bcea2'
+        jenkins-x.io/hash: 'cf5c4ed73762fe3fceaa766c0d3a11f9054a2014dd91e7f4be2adb46df8af0b5'
     spec:
       serviceAccountName: lighthouse-webhooks
       containers:
