@@ -1,0 +1,8 @@
+# Source: node-http-watch-pipeline-activity/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: node-http-watch-pipeline-activity-node-http-watch-pipeline-acti
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
