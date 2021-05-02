@@ -6,6 +6,8 @@ metadata:
   labels:
     chart: "node-http-watch-pipeline-activity-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'node-http-watch-pipeline-activity'
   namespace: jx-staging
 spec:
   type: ClusterIP

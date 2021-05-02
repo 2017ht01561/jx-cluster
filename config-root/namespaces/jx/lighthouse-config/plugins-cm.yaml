@@ -16,6 +16,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - 2017ht01561/node-http
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - 2017ht01561/node
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -43,6 +47,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       2017ht01561/node:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      2017ht01561/node-http:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       2017ht01561/node-http-watch-pipeline-activity:
@@ -93,6 +100,22 @@ data:
       - dog
       - pony
       2017ht01561/node:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      2017ht01561/node-http:
       - approve
       - assign
       - blunderbuss
@@ -173,6 +196,9 @@ data:
       trusted_org: todo
     - repos:
       - 2017ht01561/node-http-watch-pipeline-activity
+      trusted_org: todo
+    - repos:
+      - 2017ht01561/node-http
       trusted_org: todo
     - repos:
       - 2017ht01561/node

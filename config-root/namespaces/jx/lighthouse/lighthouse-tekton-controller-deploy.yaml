@@ -7,9 +7,10 @@ metadata:
     chart: "lighthouse-1.0.31"
     app: lighthouse-tekton-controller
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  namespace: jx
   annotations:
+    meta.helm.sh/release-name: 'lighthouse'
     wave.pusher.com/update-on-config-change: 'true'
+  namespace: jx
 spec:
   replicas: 1
   selector:
@@ -19,7 +20,7 @@ spec:
     metadata:
       labels:
         app: lighthouse-tekton-controller
-      annotations: {jenkins-x.io/hash: '2ef71443357ea88cbcc940d403852ef51c22cf5a49cc95ef71f942d3931bcea2'}
+      annotations: {jenkins-x.io/hash: 'cf5c4ed73762fe3fceaa766c0d3a11f9054a2014dd91e7f4be2adb46df8af0b5'}
     spec:
       serviceAccountName: lighthouse-tekton-controller
       containers:

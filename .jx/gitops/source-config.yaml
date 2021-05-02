@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: liberty
     - name: node
+    - name: node-http
     - name: node-http-watch-pipeline-activity
     - name: nodechat1
     - name: quickstart

@@ -5,6 +5,8 @@ metadata:
   creationTimestamp: "2021-04-02T06:18:15Z"
   deletionTimestamp: null
   name: 'jx-verify-0.0.75'
+  annotations:
+    meta.helm.sh/release-name: 'jx-verify'
   namespace: jx-production
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
