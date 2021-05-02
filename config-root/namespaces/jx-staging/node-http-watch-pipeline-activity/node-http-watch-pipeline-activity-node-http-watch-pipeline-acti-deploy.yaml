@@ -5,7 +5,7 @@ metadata:
   name: node-http-watch-pipeline-activity-node-http-watch-pipeline-acti
   labels:
     draft: draft-app
-    chart: "node-http-watch-pipeline-activity-0.0.1"
+    chart: "node-http-watch-pipeline-activity-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -24,11 +24,11 @@ spec:
       serviceAccountName: node-http-watch-pipeline-activity-node-http-watch-pipeline-acti
       containers:
         - name: node-http-watch-pipeline-activity
-          image: "gcr.io/artful-zone-312202/node-http-watch-pipeline-activity:0.0.1"
+          image: "gcr.io/artful-zone-312202/node-http-watch-pipeline-activity:0.0.2"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.1
+              value: 0.0.2
           envFrom: null
           ports:
             - name: http
