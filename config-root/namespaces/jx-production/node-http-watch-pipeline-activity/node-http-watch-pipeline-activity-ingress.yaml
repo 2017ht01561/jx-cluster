@@ -1,0 +1,18 @@
+# Source: node-http-watch-pipeline-activity/templates/ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: node-http-watch-pipeline-activity
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: node-http-watch-pipeline-activity
+              servicePort: 80
+      host: node-http-watch-pipeline-activity-jx-production.35.193.120.113.nip.io

@@ -6,9 +6,17 @@ environments:
 repositories:
 - name: jx3
   url: https://storage.googleapis.com/jenkinsxio/charts
+- name: dev
+  url: http://chartmuseum-jx.35.193.120.113.nip.io/
 releases:
 - chart: jx3/jx-verify
   name: jx-verify
+  namespace: jx-production
+  values:
+  - jx-values.yaml
+- chart: dev/node-http-watch-pipeline-activity
+  version: 0.0.2
+  name: node-http-watch-pipeline-activity
   namespace: jx-production
   values:
   - jx-values.yaml
