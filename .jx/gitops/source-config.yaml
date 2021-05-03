@@ -15,6 +15,7 @@ spec:
     - name: node-http-watch-pipeline-activity
     - name: nodechat1
     - name: quickstart
+    - name: spring-boot-watch-pipeline-activity
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'

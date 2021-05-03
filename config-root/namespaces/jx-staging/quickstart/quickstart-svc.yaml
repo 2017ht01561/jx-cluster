@@ -6,8 +6,6 @@ metadata:
   labels:
     chart: "quickstart-0.0.3"
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  annotations:
-    meta.helm.sh/release-name: 'quickstart'
   namespace: jx-staging
 spec:
   type: ClusterIP
