@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: 2017ht01561
+    provider: github
+    repository: spring-boot-watch-pipeline-activity
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: ht01561-spring-boot-watch-pipeline-activity
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/2017ht01561/spring-boot-watch-pipeline-activity.git
+  org: 2017ht01561
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: spring-boot-watch-pipeline-activity
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/2017ht01561/spring-boot-watch-pipeline-activity

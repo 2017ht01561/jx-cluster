@@ -34,6 +34,10 @@ data:
       repos:
       - 2017ht01561/quickstart
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - 2017ht01561/spring-boot-watch-pipeline-activity
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -66,6 +70,9 @@ data:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       2017ht01561/quickstart:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      2017ht01561/spring-boot-watch-pipeline-activity:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
     heart: {}
@@ -202,6 +209,22 @@ data:
       - cat
       - dog
       - pony
+      2017ht01561/spring-boot-watch-pipeline-activity:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -234,6 +257,9 @@ data:
       trusted_org: todo
     - repos:
       - 2017ht01561/quickstart
+      trusted_org: todo
+    - repos:
+      - 2017ht01561/spring-boot-watch-pipeline-activity
       trusted_org: todo
     welcome:
     - message_template: Welcome

@@ -7,10 +7,9 @@ metadata:
     draft: draft-app
     chart: "node-http-watch-pipeline-activity-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  annotations:
-    meta.helm.sh/release-name: 'node-http-watch-pipeline-activity'
-    wave.pusher.com/update-on-config-change: 'true'
   namespace: jx-staging
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
 spec:
   selector:
     matchLabels:

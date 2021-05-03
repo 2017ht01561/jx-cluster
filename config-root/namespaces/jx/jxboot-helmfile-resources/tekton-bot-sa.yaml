@@ -5,7 +5,6 @@ metadata:
   name: "tekton-bot"
   annotations:
     iam.gke.io/gcp-service-account: tf-jx-bold-heron-tekton@artful-zone-312202.iam.gserviceaccount.com
-    meta.helm.sh/release-name: 'jxboot-helmfile-resources'
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'

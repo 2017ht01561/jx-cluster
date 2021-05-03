@@ -15,6 +15,7 @@ data:
         2017ht01561/node-http-watch-pipeline-activity: true
         2017ht01561/nodechat1: true
         2017ht01561/quickstart: true
+        2017ht01561/spring-boot-watch-pipeline-activity: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -34,6 +35,7 @@ data:
         2017ht01561/node-http-watch-pipeline-activity: merge
         2017ht01561/nodechat1: merge
         2017ht01561/quickstart: merge
+        2017ht01561/spring-boot-watch-pipeline-activity: merge
       queries:
       - labels:
         - approved
@@ -52,6 +54,7 @@ data:
         - 2017ht01561/node
         - 2017ht01561/nodechat1
         - 2017ht01561/quickstart
+        - 2017ht01561/spring-boot-watch-pipeline-activity
       - labels:
         - updatebot
         missingLabels:
@@ -69,6 +72,7 @@ data:
         - 2017ht01561/node
         - 2017ht01561/nodechat1
         - 2017ht01561/quickstart
+        - 2017ht01561/spring-boot-watch-pipeline-activity
       target_url: http://dashboard-jx.35.193.120.113.nip.io
 kind: ConfigMap
 metadata:

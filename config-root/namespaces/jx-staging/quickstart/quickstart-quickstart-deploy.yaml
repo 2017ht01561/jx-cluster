@@ -7,10 +7,9 @@ metadata:
     draft: draft-app
     chart: "quickstart-0.0.3"
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  annotations:
-    meta.helm.sh/release-name: 'quickstart'
-    wave.pusher.com/update-on-config-change: 'true'
   namespace: jx-staging
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
 spec:
   selector:
     matchLabels:
