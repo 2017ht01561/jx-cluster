@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - 2017ht01561/angular-io
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - 2017ht01561/liberty
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -40,6 +44,9 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      2017ht01561/angular-io:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
       2017ht01561/jx-cluster:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -66,6 +73,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      2017ht01561/angular-io:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       2017ht01561/jx-cluster:
       - config-updater
       - approve
@@ -190,6 +213,9 @@ data:
     triggers:
     - repos:
       - 2017ht01561/jx-cluster
+      trusted_org: todo
+    - repos:
+      - 2017ht01561/angular-io
       trusted_org: todo
     - repos:
       - 2017ht01561/liberty
